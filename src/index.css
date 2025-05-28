@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* Reset de cores padrão do tailwind */
+  --color-*: initial;
+
+  --color-white: #ffffff;
+  --color-gray-100: #f7f3f6;
+  --color-gray-200: #f4e6f0;
+  --color-gray-300: #7a6e76;
+  --color-gray-400: #332e32;
+  --color-green-light: #cddfcc;
+  --color-green-base: #52a350;
+  --color-green-dark: #2f5c2d;
+  --color-pink-light: #e9cce1;
+  --color-pink-base: #c257a4;
+  --color-pink-dark: #884074;
+
+  --font-sans: "Cairo", sans-serif;
+
+  --text-body-md-normal: 1rem;
+  --text-body-md-normal--line-height: 1.5rem;
+  --text-body-md-normal--font-weight: 500;
+
+  --text-body-md-bold: 1rem;
+  --text-body-md-bold--line-height: 1.5rem;
+  --text-body-md-bold--font-weight: 700;
+
+  --text-body-sm-normal: 0.875rem;
+  --text-body-sm-normal--line-height: 1.25rem;
+  --text-body-sm-normal--font-weight: 500;
+
+  --text-body-sm-bold: 0.875rem;
+  --text-body-sm-bold--line-height: 1.25rem;
+  --text-body-sm-bold--font-weight: 700;
+}
+
+@utility container {
+  @apply max-w-[31.5rem]! px-2 mx-auto;
+}
+
+@utility skeleton {
+  @apply size-fit bg-gray-200 animate-pulse pointer-events-none *:block *:bg-gray-300/25 *:*:bg-gray-300/50 *:*:*:block;
+}
