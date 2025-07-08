@@ -28,7 +28,7 @@ export const TaskItem = ({ task }: TaskItemProps) => {
         e.preventDefault()
         const form = e.currentTarget
         updateTask(task.id, { done: task.done, description: (new FormData(form)).get('description')?.toString() || '' })
-        handleEndUpdateMode()
+        setIsUpdateMode(false)
     }
 
     const handleToggleDoneTask = () => {
